@@ -1,0 +1,663 @@
+ <!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>shAizi-Dev</title>
+      <meta content="" name="description">
+      <meta content="" name="keywords">
+    
+      <!-- bootstrap and css online link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+     <!-- Vendor CSS Files --> 
+     
+    <!-- <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"> -->
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <!-- <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet"> -->
+    <!-- <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet"> -->
+
+      <!-- Favicons -->
+  <link href="assets/img/favicon/favicon-icon.png" rel="icon">
+  
+
+    <!-- Main css file -->
+    <link rel="stylesheet" href="assets/css/style.css">
+     
+  </head>
+  <body>
+
+    <!-- ======== start preloader ======== -->
+
+    <div class="preloader">
+      <!-- <img src="assets/img/circle-loader.gif"> -->
+    </div>
+    <!-- ========= End preloader ========= -->
+
+    <!-- ====================== START HEADER ======================= -->
+    <!-- ================== back to top ================== -->
+
+    <button onclick="topFunction()" id="myBtn" title="Back to top">Top</button>
+
+    <script>
+        // Get the button
+        let mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+      }
+    </script>
+
+    <!-- ================== end back to top ================== -->
+    <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <h1 class="logo"><a href="index.html">shAizi-Dev</a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+       <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a> -->
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">About</a></li> 
+          <li><a class="nav-link scrollto" href="#portfolio">Portfolio</a></li>
+          <li class="dropdown"><a class="nav-link scrollto " href="#services"><span>Services AT</span><i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="#">Up Work</a></li>
+              <li><a href="#">Fiverr</a></li>
+              <li><a href="#">freelance.com</a></li>
+            </ul>
+          </li>
+          <!-- <li><a class="nav-link scrollto" href="#team">Team</a></li> -->
+          <li class="dropdown"><a href="#"><span>Research <i class="bi bi-chevron-down"></i></span></a>
+            <ul>
+              <li class="dropdown"><a href=""><span>Artificial Intelligence</span><i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="data/AI_in_Cloud.pdf" target="_blank" download ="AI">Web Application</a></li>
+                  <li><a href="#">Rebotics</a></li>
+                  <li><a href="#">Auto Business</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Software Development</a></li>
+              <li><a href="#">Eithical Hacking</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="free-temp.html"><span class="text-danger">Templates <!-- <i class="bi bi-chevron-down"></i> --></span></a>
+            <!-- <ul> --> <!-- start inner list -->
+              <!-- <li><a href="#">Web Design</a></li>
+              <li class="dropdown"><a href="#"><span>Web Application</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="#">Coming Soon</a></li>
+                  <li><a href="#">Deep Drop Down 2</a></li>
+                  <li><a href="#">Deep Drop Down 3</a></li>
+                </ul>
+              </li>
+              <li><a href="#">custom website </a></li>
+              <li><a href="#">Landing Page</a></li>
+              <li><a href="#">Email Template</a></li> -->
+              <!-- <li><a href="#">Bug Fixes</a></li> -->
+            <!-- </ul> --> <!-- End inner list -->
+          </li>
+          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+          <li><a class="signup-btn" href="sign up.html">LogIn</a></li>
+        </ul>
+        <!-- <i class="bi bi-list mobile-nav-toggle"></i> -->
+      </nav><!-- .navbar -->
+    </div>
+  </header>  
+
+    <!-- =========================== END HEADER ========================= -->
+
+    <!-- ============ Hero sction ============= -->
+    <section id="hero" class="d-flex align-items-center"style="background-image: url(assets/img/hero-bg.jpg)">
+      <div class="container position-relative" >
+        <div class="row justify-content-center">
+          <div class="col-xl-7 col-lg-9 text-center">
+            <h1>shAizi-Dev Bootstrap Website Template</h1>
+            <h2>Team of Talented <b>WEB</b> Designers</h2>
+          </div>
+        </div>
+        <div class="text-center">
+          <a href="sign up.html" class="btn-get-started scrollto">Get Started</a>
+        </div>
+      </div>
+    </section>
+  
+        <!-- End Hero Section -->
+        <main id="main">
+          <!-- ============ About Section ========== -->
+          <section id="about" class="about-mf">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12 col-lg-7">
+                  <div class="about-box">
+                    <div class="title-page">
+                      <h2><strong class="yellow">About US</strong><br> WE CAN HELP YOUR website development</h2>
+                    </div>
+                    <h3>EVERYTHING YOU NEED IN ONE SOLUTION</h3>
+                    <span>HELP YOUR NEXT CAREER MOVE MORE SMOOTHER AND <br> MORE EFFICIENT</span>
+                    <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                  </div>
+                </div>
+                <div class="col-md-12 col-lg-5">
+                  <div class="about-img">
+                    <figure><img src="assets/img/about_img2.jpg" alt=""></figure>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          
+          <!-- ============ End Section ============ -->
+
+
+
+          <!-- ========= Portfolio Section ========== -->
+          <section id="portfolio" class="portfolio-mf scet-pt4 route">
+            <div class="container">
+              <div class="row">
+                <span><h3>Portfolio</h3></span>
+                <div class="col-sm-12">
+                  <div class="box-shadow-full">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="row">
+                          <div class="col-sm-6 col-md-5">
+                            <div class="about-img">
+                              <img src="assets/image/sha (3).jpg" class="img-fluid rounded b-shadow-a" alt="">
+                            </div>
+                          </div>
+                          <div class="col-sm-6 col-md-7">
+                            <div class="about-info">
+                              <p><span class="title-s">Name: </span> <span>shahroz imtiaz</span></p>
+                              <p><span class="title-s">Profile:</span><span>Full Stack Developer</span></p>
+                              <p><span class="title-s">Email:</span> <span>shaizidev@gmail.com</span></p>
+                              <p><span class="title-s">Phone:</span> <span>(+92) 3208184526</span></p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="skill-mf">
+                          <p class="title-s">Skill</p>
+                          <span>Html</span> <span class="pull-right">85%</span>
+                          <div class="progress">
+                            <div class="progress-bar" role="progress-bar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+                          <span>CSS and Bootstrap</span> <span class="pull-right">85%</span>
+                          <div class="progress">
+                            <div class="progress-bar" role="progress-bar" style="width: 85%"; aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+                          <span>PHP</span> <span class="pull-right">50%</span>
+                          <div class="progress">
+                            <div class="progress-bar" role="progress-bar" style="width: 50%"; aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+                          <span>JAVASCRIPT</span> <span class="pull-right">70%</span>
+                          <div class="progress">
+                            <div class="progress-bar" role="progress-bar" style="width: 60%"; aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="about-me pt-4 pt-md-0">
+                          <div class="title-box-2 ">
+                            <h5 class="title-left ">
+                              About me
+                            </h5>
+                          </div>
+                          <p class="lead">
+                            Hi! I am <a href="#">Muhammad Shahroz</a> the CEO of shAizi-Dev Private Limited. Our group of developers have created 15+ projects for worldwide. I personally have 2+ years of experience in web development. We are ready to convert your ideas into reality!
+                          </p>
+                          <p class="lead">
+                            I can Design and develop website according to you requirements or also customize your existing issues by using core PHP, html, CSS, JavaScript, bootstrap framework. I can also redesign or redevelop you existing web.
+                          </p>
+                          <p class="lead">
+                            And also I'm <a href="#">Research</a> in different <a href="#">projects</a> .
+                          </p>
+                        </div>
+                        <div class="hire-Me">
+                          <button id="btn" class="hire-button text-center" title="Hire for Freelance project">Hire Me for Freelance project !</button>
+                          <div class="modal" id="myModal">
+                            <div class="modal-content">
+                              <span class="close">&times;</span>
+                              <h2>if you to discuss related to project then you are the right place</h2>
+                              <a target="_blank" href="https://www.fiverr.com/share/dLBLW0"><img src="assets/img/fiverr_logo_icon.png" width="150px" height="" ></a>
+                              <form class="form" method="post" action="#">
+                                <input type="email" name="email" class="form-control mt-5 mb-3" placeholder="Email" required>
+                                <label class="text-muted">Phone number </label>
+                                <input type="number" name="number" class="mb-3" placeholder="+92" required>
+                                <label class="text-muted">Company Name </label>
+                                <input type="text" name="text" class="mb-3" placeholder="company Name" required> <br>
+                                <input type="file" class="mb-3"> <span class="text-danger">Drop project here</span>
+                                <textarea class="text form-control mb-3" rows="5" placeholder="Details Here"></textarea>
+                                <input type="submit" value="submit">
+                              </form>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <script type="text/javascript">
+            // Get the modal
+            var modal = document.getElementById("myModal");
+
+            // Get the button that opens the modal
+            var btn = document.getElementById("btn");
+
+            // Get the <span> element that closes the modal
+            var span = document.getElementsByClassName("close")[0];
+
+            // When the user clicks the button, open the modal 
+            btn.onclick = function() {
+              modal.style.display = "block";
+            }
+
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function() {
+              modal.style.display = "none";
+            }
+
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+              if (event.target == modal) {
+                modal.style.display = "none";
+              }
+            }
+          </script>
+      <!-- <!==== End Section ======> -->
+        <!-- ======= Services Section ======= -->
+    <section id="services" class="services-mf pt-5 route">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="title-box text-center">
+              <h3 class="title-a">
+                Services
+              </h3>
+              <p class="subtitle-a">
+                Feel free contact us for your project.
+              </p>
+              <div class="line-mf"></div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="service-box">
+              <div class="service-ico">
+                <span class="ico-circle"><i class="bi bi-briefcase"></i></span>
+              </div>
+              <div class="service-content">
+                <h2 class="s-title">Web Design</h2>
+                <p class="s-description text-center">
+                  We will Design your website! to look modren technologies based.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="service-box">
+              <div class="service-ico">
+                <span class="ico-circle"><i class="bi bi-card-checklist"></i></span>
+              </div>
+              <div class="service-content">
+                <h2 class="s-title">Web Development</h2>
+                <p class="s-description text-center">
+                  We will create custom website as you own your mind.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="service-box">
+              <div class="service-ico">
+                <span class="ico-circle"><i class="bi bi-bar-chart"></i></span>
+              </div>
+              <div class="service-content">
+                <h2 class="s-title">Web Analytics</h2>
+                <p class="s-description text-center">
+                  We provide web Analatics services using different Tool.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="service-box">
+              <div class="service-ico">
+                <span class="ico-circle"><i class="bi bi-canva"></i></span>
+              </div>
+              <div class="service-content">
+                <h2 class="s-title">Bug Fixes</h2>
+                <p class="s-description text-center">
+                  We provide web Bug fixing servies using different Tool.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="service-box">
+              <div class="service-ico">
+                <span class="ico-circle"><i class="bi bi-brightness-high"></i></span>
+              </div>
+              <div class="service-content">
+                <h2 class="s-title">Graphic Design</h2>
+                <p class="s-description text-center">
+                  We will create responsive design using Adobe, Ai, photoshop.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4"> 
+            <div class="service-box">
+              <div class="service-ico">
+                <span class="ico-circle"><i class="bi bi-calendar4-week"></i></span>
+              </div>
+              <div class="service-content">
+                <h2 class="s-title">Marketing Services</h2>
+                <p class="s-description text-center">
+                  we provide Digital and social media marketing services
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Services Section -->
+
+      <!-- ======= Counter Section ======= -->
+    <div class="section-counter paralax-mf bg-image" style="background-image: url(assets/img/counters-bg.jpg)">
+      <div class="overlay-mf"></div>
+      <div class="container position-relative">
+        <div class="row">
+          <div class="col-sm-3 col-lg-3">
+            <div class="counter-box counter-box pt-4 pt-md-0">
+              <div class="counter-ico">
+                <span class="ico-circle"><i class="bi bi-check"></i></span>
+              </div>
+              <div class="counter-num">
+                <p data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="2" class="counter purecounter"></p>
+                <span class="counter-text">WORKS COMPLETED</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3 col-lg-3">
+            <div class="counter-box pt-4 pt-md-0">
+              <div class="counter-ico">
+                <span class="ico-circle"><i class="bi bi-journal-richtext"></i></span>
+              </div>
+              <div class="counter-num">
+                <p data-purecounter-start="0" data-purecounter-end="2" data-purecounter-duration="3" class="counter purecounter"></p>
+                <span class="counter-text">YEARS OF EXPERIENCE</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3 col-lg-3">
+            <div class="counter-box pt-4 pt-md-0">
+              <div class="counter-ico">
+                <span class="ico-circle"><i class="bi bi-people"></i></span>
+              </div>
+              <div class="counter-num">
+                <p data-purecounter-start="0" data-purecounter-end="5" data-purecounter-duration="2" class="counter purecounter"></p>
+                <span class="counter-text">TOTAL CLIENTS</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3 col-lg-3">
+            <div class="counter-box pt-4 pt-md-0">
+              <div class="counter-ico">
+                <span class="ico-circle"><i class="bi bi-award"></i></span>
+              </div>
+              <div class="counter-num">
+                <p data-purecounter-start="0" data-purecounter-end="3" data-purecounter-duration="2" class="counter purecounter"></p>
+                <span class="counter-text">AWARD WON</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><!-- End Counter Section -->
+
+          <!-- ======= Blog Section ======= -->
+    <section id="blog" class="blog-mf sect-pt4 route">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="title-box text-center">
+              <h3 class="title-a">
+                Blog
+              </h3>
+              <p class="subtitle-a">
+                These blog are about new projecte e.g web , AI , search engine.
+              </p>
+              <div class="line-mf"></div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card card-blog">
+              <div class="card-img">
+                <a href="blog1.html"><img src="assets/img/AI/Artificial-Intelligence.jpg" alt="" class="img-fluid"></a>
+              </div>
+              <div class="card-body">
+                <div class="card-category-box">
+                  <div class="card-category">
+                    <h6 class="category">Artificial Intelligence</h6>
+                  </div>
+                </div>
+                <h3 class="card-title"><a href="#">See more artificial intelligence ideas </a></h3>
+                <p class="card-description">
+                  This blog about artificial intelligence which makes more understand-able and consider-able who thing invole in this world.
+                </p>
+              </div>
+              <div class="card-footer">
+                <div class="post-author">
+                  <a href="blog1.html">
+                    <!-- <img src="assets/img/testimonial-2.jpg" alt="" class="avatar rounded-circle"> -->
+                    <span class="author">shAizi-Dev</span>
+                  </a>
+                </div>
+                <div class="post-date">
+                  <span class="bi bi-clock"></span> 10 min
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card card-blog">
+              <div class="card-img">
+                <a href="blog2.html"><img src="assets/img/AI/web-design.webp" alt="" class="img-fluid"></a>
+              </div>
+              <div class="card-body">
+                <div class="card-category-box">
+                  <div class="card-category">
+                    <h6 class="category">Software Development</h6>
+                  </div>
+                </div>
+                <h3 class="card-title"><a href="blog2.html">See more software development</a></h3>
+                <p class="card-description">
+                 In this blog we discuss about software development and its value, and also we dicuss these steps to build a software.
+                </p>
+              </div>
+              <div class="card-footer">
+                <div class="post-author">
+                  <a href="blog2.html">
+                    <!-- <img src="assets/img/testimonial-2.jpg" alt="" class="avatar rounded-circle"> -->
+                    <span class="author">shAizi-Dev</span>
+                  </a>
+                </div>
+                <div class="post-date">
+                  <span class="bi bi-clock"></span> yesterday
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card card-blog">
+              <div class="card-img">
+                <a href="blog3.html"><img src="assets/img/AI/digital hack.jpg" alt="" class="img-fluid"></a>
+              </div>
+              <div class="card-body">
+                <div class="card-category-box">
+                  <div class="card-category">
+                    <h6 class="category">Eithical Hacking</h6>
+                  </div>
+                </div>
+                <h3 class="card-title"><a href="blog3.html">See more ideas about Eithical  Hacking</a></h3>
+                <p class="card-description">
+                  Discuss about Eithical hacking and its stratage, and also discuss advantages or disadvantages.
+                </p>
+              </div>
+              <div class="card-footer">
+                <div class="post-author">
+                  <a href="blog3.html">
+                    <!-- <img src="assets/img/testimonial-2.jpg" alt="" class="avatar rounded-circle"> -->
+                    <span class="author">shAizi-Dev</span>
+                  </a>
+                </div>
+                <div class="post-date">
+                  <span class="bi bi-clock"></span> 2 days ago
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Blog Section -->
+
+     <!-- ======= Contact Section ======= -->
+    <section id="contact" class="paralax-mf footer-paralax bg-image sect-mt4 route" style="background-image: url(assets/img/overlay-bg.jpg)">
+      <div class="overlay-mf"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="contact-mf">
+              <div id="contact" class="box-shadow-full">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="title-box-2">
+                      <h5 class="title-left">
+                        Send Message Us
+                      </h5>
+                    </div>
+                    <div>
+                      <form action="#" method="post" role="form" class="php-email-form">
+                        <div class="row">
+                          <div class="col-md-12 mb-3">
+                            <div class="form-group">
+                              <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                            </div>
+                          </div>
+                          <div class="col-md-12 mb-3">
+                            <div class="form-group">
+                              <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                            </div>
+                          </div>
+                          <div class="col-md-12 mb-3">
+                            <div class="form-group">
+                              <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+                            </div>
+                          </div>
+                          <div class="col-md-12">
+                            <div class="form-group">
+                              <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+                            </div>
+                          </div>
+                          <div class="col-md-12 text-center my-3">
+                            <div class="loading">Loading</div>
+                            <div class="error-message"></div>
+                            <div class="sent-message">Your message has been sent. Thank you!</div>
+                          </div>
+                          <div class="col-md-12 text-center">
+                            <button type="submit" class="button button-a button-big button-rouded">Send Message</button>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="title-box-2 pt-4 pt-md-0">
+                      <h5 class="title-left">
+                        Get in Touch
+                      </h5>
+                    </div>
+                    <div class="more-info">
+                      <!-- <p class="lead">
+                        Hello Dear,<br>To Get More Update Please contact Me?
+                      </p> -->
+                      <ul class="list-ico">
+                        <li><span class="bi bi-geo-alt"></span>Remote</li>
+                        <li><span class="bi bi-phone"></span> (+92) 3208184526</li>
+                        <li><span class="bi bi-envelope"></span> shAizi-Devinfo@gmail.com</li>
+                      </ul>
+                    </div>
+                    <div class="socials">
+                      <ul>
+                        <li><a target="new-tab" href="https://www.facebook.com"><span class="ico-circle"><i class="bi bi-facebook"></i></span></a></li>
+                        <li><a target="new-tab" href="https://www.instagram.com/"><span class="ico-circle"><i class="bi bi-instagram"></i></span></a></li>
+                        <li><a target="new-tab" href="https://www.twitter.com/"><span class="ico-circle"><i class="bi bi-twitter"></i></span></a></li>
+                        <li><a target="new-tab" href="https://www.LinkedIn.com/"><span class="ico-circle"><i class="bi bi-linkedin"></i></span></a></li>
+                        <!-- <li><a target="new-tab" href="#"><span class="ico-circle"><i class="bi bi-youtube"></i></span></a></li> -->
+                        <li><a target="new-tab" href="https://github.com/shAizi-Dev/shAizi-Dev/tree/master"><span class="ico-circle"><i class="bi bi-github"></i></span></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Contact Section -->
+
+        </main> <!------ End main ------>
+
+        <!-- ======= Footer ======= -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="copyright-box">
+            <p class="copyright">&copy; Copyright <strong>Shaizi-Dev  </strong>. All Rights Reserved</p>
+            <div class="credits">
+              <!-- Designed by <a href="#">shAizi-Dev</a> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer><!-- End  Footer -->
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter.js"></script>
+  <!-- <script src="assets/vendor/404 error/script1.js"></script> -->
+  <!-- <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script> -->
+  <!-- <script src="assets/vendor/glightbox/js/glightbox.min.js"></script> -->
+  <!-- <script src="assets/vendor/swiper/swiper-bundle.min.js"></script> -->
+  <!-- <script src="assets/vendor/typed.js/typed.min.js/"></script> -->
+  <!-- <script src="assets/vendor/php-email-form/validate.js"></script> -->
+
+  <!-- Template Main JS File -->
+  <!-- <script src="assets/vendor/404 error/script.js"></script> -->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  </body>
+</html>
